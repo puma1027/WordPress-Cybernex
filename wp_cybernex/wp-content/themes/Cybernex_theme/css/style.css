@@ -1,0 +1,697 @@
+/* TOP CSS */
+
+#top .main-visual {
+    background: url(../image/main-bg.jpg) top center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#top .who-btn a {
+    background: #fff;
+    padding: 0.6em 2em;
+    border-radius: 50px;
+    width: 200px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#top .who-btn a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50px;
+    z-index: -2;
+}
+
+#top .who-btn a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #C70035;
+    transition: all .3s;
+    border-radius: 50px;
+    z-index: -1;
+    border: 1px solid #fff;
+}
+
+#top .who-btn a:hover {
+    color: #fff;
+}
+
+#top .who-btn a:hover::before {
+    width: 100%;
+}
+
+#top .who-btn a span {
+    font-family: fangsong;
+}
+
+#top .vision img {
+    border-radius: 20px;
+}
+
+#top .section-content img {
+    border-radius: 20px;
+}
+
+#top .section-content p {
+    top: 20px;
+    left: 30px;
+}
+
+#top .section-content .view-btn {
+    right: 20px;
+}
+
+#top .links .section-content {
+    background: #222222;
+    height: 50vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#top .links .row .col-md-4:nth-child(1) {
+    padding-right: 35px;
+}
+
+#top .links .row .col-md-4:nth-child(2) {
+    padding: 0 25px;
+}
+
+#top .links .row .col-md-4:nth-child(3) {
+    padding-left: 35px;
+}
+
+#top .news .news-img {
+    background: #222222;
+    border-radius: 20px;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+#top .news-list .news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.4s;
+}
+
+#top .news .category {
+    background: #C70035;
+    border-radius: 50px;
+    padding: 3px 10px;
+}
+
+#top .news .date {
+    margin-right: 20px;
+    color: #C70035;
+}
+
+
+/* ABOUT CSS */
+
+#about .main-visual {
+    background: url(../image/about-bg.jpg) top right no-repeat;
+    background-size: cover;
+}
+
+#about .people .member-photo img {
+    width: 90%;
+    margin: auto;
+}
+
+#about .people .member-photo article {
+    display: none;
+}
+
+#about .people .advisor-item {
+    width: 90%;
+}
+
+#about .access .map-link a {
+    color: #C70035;
+}
+
+#about .company-detail .d-md-table-cell:first-child div {
+    background-color: #F7F7F7;
+    border-radius: 50px;
+}
+
+#about .company-detail ul {
+    padding-inline-start: 1em;
+}
+
+#about .member-modal .modal {
+    padding: 0 !important;
+}
+
+#about .member-modal .modal-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 100% !important;
+    margin: 0;
+}
+
+#about .member-modal .modal-content {
+    height: 100% !important;
+    min-height: 100vh;
+    padding: 100px 0 !important;
+    border: none;
+    border-radius: 0;
+}
+
+#about .member-modal .modal-header {
+    border: none;
+}
+
+#about .member-modal-img {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+#about .member-modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#about .close {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 0.9;
+    color: #fff;
+    background: #C70035 !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    text-shadow: none;
+    opacity: 1;
+    outline: none;
+}
+
+
+/* MESSAGE CSS */
+
+#message .main-visual {
+    background: url(../image/message-bg.jpg) top right no-repeat;
+    background-size: cover;
+}
+
+
+/* SERVICE CSS */
+
+#service .main-visual {
+    background: url(../image/service-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#service .what-we-do .faq-link a {
+    color: #C70035;
+}
+
+#service .intro-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#service .circle-icon {
+    padding: 40px;
+    border-radius: 100%;
+    background: #F7F7F7;
+}
+
+#service .circle-icon img {
+    min-width: 50px;
+}
+
+#service .accordion {
+    cursor: pointer;
+    padding: 45px 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+#service .panel {
+    padding: 0 5px;
+    overflow: hidden;
+    line-height: 1.7;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+#service .accordion:after {
+    content: '+';
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background: #C70035;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+}
+
+#service .active:after {
+    content: '-';
+}
+
+#service .our-works .multi-accordion {
+    padding: 30px 5px;
+}
+
+
+/* NEWS CSS */
+
+#news .main-visual {
+    background: url(../image/news-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#news .news-list .news-img {
+    background: #222222;
+    border-radius: 20px;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+#news .news-list .news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.4s;
+}
+
+#news .news-list .date {
+    margin-right: 20px;
+    color: #C70035;
+}
+
+#news .news_arhive_nav {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    color: #222222;
+}
+
+#news .news_arhive_nav li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#news .news_arhive_nav li a {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1.5em;
+    color: #222222;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#news .news_arhive_nav li a::before {
+    content: "";
+    position: absolute;
+    top: 48%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #222222;
+}
+
+#news .news_arhive_nav li a.active {
+    color: #C70035;
+}
+
+#news .news_arhive_nav li a[aria-current="page"] {
+    color: #C70035;
+}
+
+#news .news_arhive_nav li a.active::before {
+    border-color: #C70035;
+    background: #C70035;
+}
+
+#news .news_arhive_nav li a[aria-current="page"]::before {
+    border-color: #C70035;
+    background: #C70035;
+}
+
+
+/* NEWS DETAIL CSS */
+
+#news-post .main-visual {
+    background: url(../image/news-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#news-post .date {
+    margin-right: 20px;
+    color: #C70035;
+}
+
+#news-post .social-links img {
+    margin-right: 10px;
+}
+
+#news-post .news-content .box-text {
+    background: #F7F7F7;
+}
+
+#news-post .news-content .news-img {
+    background: #222222;
+    border-radius: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+#news-post .pdf-link a {
+    color: #C70035;
+    text-decoration: underline;
+}
+
+#news-post .news-list .news-img {
+    background: #222222;
+    border-radius: 20px;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+#news-post .news-list .news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.4s;
+}
+
+
+/* careerS CSS */
+
+#careers .main-visual {
+    background: url(../image/careers-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#careers .careers-item {
+    background: #F7F7F7;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#careers .careers-tag span {
+    margin-right: 15px;
+}
+
+
+/* careerS DETAIL CSS */
+
+#careers-post .main-visual {
+    background: url(../image/careers-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#careers-post .careers-title .date {
+    margin-right: 20px;
+    color: #C70035;
+}
+
+#careers-post .social-links img {
+    margin-right: 10px;
+}
+
+#careers-post .faq-link a {
+    color: #C70035;
+}
+
+#careers-post .careers-item {
+    background: #F7F7F7;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#careers-post .careers-content ul {
+    padding-inline-start: 1em;
+}
+
+
+/* FAQ CSS */
+
+#faq .main-visual {
+    background: url(../image/faq-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#faq .accordion {
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-top: 2px solid #F7F7F7;
+}
+
+#faq .panel {
+    padding: 0 30px;
+    overflow: hidden;
+    line-height: 1.7;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+#faq .faq-accordion .panel:last-child {
+    border-bottom: 2px solid #F7F7F7;
+}
+
+#faq .panel p {
+    padding: 30px 0;
+}
+
+#faq .accordion:after {
+    content: '+';
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background: #C70035;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+}
+
+#faq .active:after {
+    content: '-';
+}
+
+
+/* CONTACT CSS */
+
+#contact .main-visual {
+    background: url(../image/contact-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#contact .faq-link a {
+    color: #C70035;
+}
+
+#contact .form-input {
+    border-bottom: 2px solid #F7F7F7;
+    padding: 15px 20px 5px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .form-input input,
+#contact .form-input select,
+#contact .form-input textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#contact .form-input::after {
+    content: "・";
+    font-size: 30px;
+    color: #C70035;
+    font-weight: bold;
+}
+
+#contact .agree-checkbox label {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2em;
+}
+
+#contact .agree-checkbox label input {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+#contact .agree-checkbox label span {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    left: 0;
+    border-radius: 3px;
+    background-color: #999999;
+    border: 1px solid #999999;
+}
+
+#contact .agree-checkbox label span::after {
+    content: '';
+    position: absolute;
+    border-left: 2px solid #C70035;
+    border-bottom: 2px solid #C70035;
+    width: .8em;
+    height: .5em;
+    transform: rotate(-45deg);
+    display: none;
+    left: .3em;
+    top: .2em;
+}
+
+#contact .agree-checkbox label input:checked~span {
+    background-color: transparent;
+    border: 1px solid #C70035;
+}
+
+#contact .agree-checkbox label input:checked~span::after {
+    display: block;
+}
+
+#contact .agree-link a {
+    color: #C70035;
+}
+
+#contact .wpcf7-form-control-wrap {
+    width: 100%;
+    display: flex;
+}
+
+#contact .wpcf7-submit {
+    display: none;
+}
+
+#contact .die-btn {
+    background: lightgray !important;
+    border-color: lightgray !important;
+    color: #222222 !important;
+}
+
+#contact .die-btn::after {
+    background-color: lightgray !important;
+    border-color: lightgray !important;
+}
+
+#contact .die-btn::before {
+    background-color: lightgray !important;
+    border-color: lightgray !important;
+}
+
+
+/* PRIVACY POLICY CSS */
+
+#privacy-policy .main-visual {
+    background: url(../image/faq-bg.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 1080px) {
+    #top .links .section-content {
+        height: 40vh;
+    }
+    #top .links .row .col-md-4:nth-child(1) {
+        padding-right: 15px;
+    }
+    #top .links .row .col-md-4:nth-child(2) {
+        padding: 0 15px;
+    }
+    #top .links .row .col-md-4:nth-child(3) {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 769px) {
+    #top .vision img {
+        width: 100%;
+    }
+    #top .main-visual {
+        height: 100vh;
+    }
+    #about .member-modal .row {
+        flex-direction: column-reverse;
+    }
+    #about .member-modal .modal-content {
+        padding: 50px 0 !important;
+    }
+    #service .circle-icon {
+        padding: 15px;
+    }
+    #service .circle-icon img {
+        min-width: 30px;
+    }
+    #service .accordion {
+        padding: 15px 5px;
+    }
+    #service .our-works .multi-accordion {
+        padding: 5px;
+    }
+    #news .news {
+        flex-direction: column-reverse;
+    }
+    #news-post .news-content .news-img {
+        height: 300px;
+    }
+    #careers .careers {
+        flex-direction: column-reverse;
+    }
+    #faq .accordion {
+        padding: 15px;
+    }
+    #faq .panel {
+        padding: 0 15px;
+    }
+    #faq .panel p {
+        padding: 15px 0;
+    }
+    #faq .main-visual {
+        height: 60vh;
+    }
+    #contact .form-input {
+        padding: 5px 5px 0 10px;
+    }
+}
